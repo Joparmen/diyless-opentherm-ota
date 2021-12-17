@@ -8,13 +8,13 @@
 
 // Your WiFi credentials.
 // Set password to "" for open networks.
-const char* ssid = "ssid";
-const char* pass = "pass";
+const char* ssid = "";
+const char* pass = "";
 
 // Your MQTT broker address and credentials
-const char* mqtt_server = "ip";
-const char* mqtt_user = "MQTT";
-const char* mqtt_password = "pass";
+const char* mqtt_server = "";
+const char* mqtt_user = "";
+const char* mqtt_password = "";
 const int mqtt_port = 1883;
 
 
@@ -35,6 +35,12 @@ const String BASE_TOPIC = "opentherm-thermostat/";
 
 const String CURRENT_TEMP_GET_TOPIC = BASE_TOPIC + "current-temperature/get";
 const String CURRENT_TEMP_SET_TOPIC = BASE_TOPIC + "current-temperature/set";
+
+// Boiler range temperature topics
+const String HIGH_TEMP_GET_TOPIC = BASE_TOPIC + "high-temperature/get";
+const String HIGH_TEMP_SET_TOPIC = BASE_TOPIC + "high-temperature/set";
+const String LOW_TEMP_GET_TOPIC = BASE_TOPIC + "low-temperature/get";
+const String LOW_TEMP_SET_TOPIC = BASE_TOPIC + "low-temperature/set";
 
 // current temperature topics
 const String TEMP_SETPOINT_GET_TOPIC = BASE_TOPIC + "setpoint-temperature/get";
